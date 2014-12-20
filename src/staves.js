@@ -8,21 +8,34 @@ function parseStavesContent(raw) {
   return {
     headline: split[0],
     notes: split[1].split('\n'),
-    text: _.map(split.slice(2), function(verse) { return verse.split('\n'); })
+    texts: _.map(split.slice(2), function(verse) { return verse.split('\n'); })
   }
 }
 
-function createVextab(parsed) {
-  return 'options space=0 stave-distance=40\n\n' +
-    _.map(parsed.text, function(verse) {
+function createVextabs(parsed, stavesPerVextab) {
+  return _.map(subarraysOfLength(_.flatten(_.map(parsed.texts, function(verse) {
       return _.map(_.zip(parsed.notes, verse), function(noteVerse) {
         return [
           parsed.headline,
           'notes ' + noteVerse[0],
           'text ++,.11,.font=Arial-14-normal,' + noteVerse[1]
         ].join('\n');
-      }).join('\n\n');
-    }).join('\n\n');
+      });
+    })), stavesPerVextab), function(page) {
+    return 'options space=0 stave-distance=40\n\n' + page.join('\n\n');
+  });
+}
+
+function subarraysOfLength(array, length) {
+  var subarrays = [[]];
+  for (var i = 0; i < array.length; i++) {
+    if (subarrays[subarrays.length - 1].length < length) {
+      subarrays[subarrays.length - 1].push(array[i]);
+    } else {
+      subarrays.push([array[i]]);
+    }
+  }
+  return subarrays;
 }
 
 function createHtmlForVextab(vextab, scripts) {
@@ -48,12 +61,15 @@ module.exports = function(program) {
     , height = program.H;
   
   fs.readFile(infile, function(err, buff) {
-    var vextab = createVextab(parseStavesContent(buff.toString()));
+    var content = parseStavesContent(buff.toString())
+      , vextabs = createVextabs(content, Math.floor(height / 250));
     
-    htmlpdf.create(createHtmlForVextab(vextab, [raphaelJs, vextabDivJs]), {
-      width: width + 'px',
-      height: height + 'px',
-      filename: outfile
-    }, function(err, buffer) {});
+    _.each(vextabs, function(vextab, index) {
+      htmlpdf.create(createHtmlForVextab(vextab, [raphaelJs, vextabDivJs]), {
+        width: width + 'px',
+        height: height + 'px',
+        filename: outfile.replace('.pdf', '-' + (index + 1) + '.pdf')
+      }, function(err, buffer) {});
+    });
   });
 };
