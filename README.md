@@ -12,8 +12,8 @@ Heavily inspired (and making use of) [0xfe/vextab](https://github.com/0xfe/vexta
 Getting started
 ---------------
 
-```bash
-$ npm install -g staves
+```
+$ (sudo) npm install -g staves
 $ staves --help
   Usage: staves [options] <file.staves>
 
