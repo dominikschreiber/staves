@@ -2,8 +2,9 @@
   "name": "staves",
   "version": "0.0.0",
   "description": "create pdf from vextab-based notation",
-  "main": "index.js",
+  "main": "bin/staves",
   "scripts": {
+    "start": "bin/staves",
     "test": "node_modules/.bin/mocha"
   },
   "repository": {
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/dominikschreiber/staves",
   "dependencies": {
+    "commander": "^2.5.1",
+    "node-phantom": "^0.2.5",
+    "phantomjs": "^1.9.13",
     "vextab": "^2.0.10"
   },
   "devDependencies": {
