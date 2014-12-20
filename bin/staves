@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var program = require('commander')
+  , package = require('../package.json')
+  , staves = require('../src/staves');
+
+program
+  .version(package.version)
+  .usage('[options] <file.staves>')
+  .option('-o <file.pdf>, --outfile <file.pdf>', 'the target pdf file, defaults to a.pdf', 'a.pdf')
+  .option('-t <-11..+11>, --transpose <-11..+11>', 'transpose the content of <file.staves> by -11 to +11 semitones, defaults to 0', 0)
+  .option('-pp <n > 0>, --per-page <n > 0>', 'number of tabstaves to appear on a single page, defaults to 4', 4);
+
+program.parse(process.argv);
+
+return staves(program);
