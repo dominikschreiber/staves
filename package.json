@@ -21,6 +21,9 @@
     "commander": "^2.5.1",
     "node-phantom": "^0.2.5",
     "phantomjs": "^1.9.13",
+    "socket.io": "0.9.x",
+    "underscore": "^1.7.0",
+    "underscore.string": "^2.4.0",
     "vextab": "^2.0.10"
   },
   "devDependencies": {
