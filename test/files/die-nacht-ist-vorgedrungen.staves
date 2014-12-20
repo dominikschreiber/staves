@@ -1,5 +1,6 @@
 tabstave key=Eb time=6/4 notation=true tablature=false
 
+# Noten
 :h G/4 | C-C/5 :q B-G/4 | :h A-G/4
 :h F/4 | :q G-E-ChD/4 :h E/4 | :w F/4
 :h G/4 | C-C/5 :q B-G/4 | :h A-G/4
@@ -9,6 +10,7 @@ tabstave key=Eb time=6/4 notation=true tablature=false
 :h G/4 | C/5 B/4 :q A-G/4 | FhE-F/4
 :q G/4 | :h E-C/4 :q F-F/4 | :w G/4
 
+# Strophe 1
 :q,1.,Die,|,:h,Nacht,ist,:8,vor,-,ge,-,|,:q,drun,-,:h,gen
 :h,der,|,:q,Tag,ist,:h,nicht,mehr,|,:w,fern.
 :h,So,|,sei,nun,:q,Lob,:8,ge,-,|,:q,sun,-,:h,gen
@@ -18,6 +20,7 @@ tabstave key=Eb time=6/4 notation=true tablature=false
 :h,Der,|,:q,Mor,-,gen,-,stern,:8,be,-,|,:q,schei,-,net
 :q,auch,|,dei,-,:h,ne,:q,Angst,und,|,:w,Pein.
 
+# Strophe 2
 :q,2.,Dem,|,:q,Al,-,:h,le,:8,En,-,:q,gel,|,:q,die,-,:h,nen
 :h,wird,|,:q,nun,ein,:h,Kind,und,|,:w,Knecht.
 :h,Gott,|,:q,sel,-,:h,ber,:q,ist,:8,er,-,|,:q,schie,-,:h,nen
@@ -26,3 +29,13 @@ tabstave key=Eb time=6/4 notation=true tablature=false
 :8,ver,-,|,:q,hüll,nicht,:h,mehr,sein,|,:w,Haupt.
 :h,Er,|,soll,:q,er,-,:8,ret,-,|,:q,tet,wer,-,den
 :q,wenn,|,:h,er,dem,:8,Kin,-,:q,de,|,:w,glaubt.
+
+# Strophe 3
+:q,3.,Die,|,:h,Nacht,ist,:q,schon,im,|,:q,Schwin,-,:h,den
+:h,macht,|,:q,euch,zum,Stal,-,:h,le,|,:w,auf!
+:h,Ihr,|,sollt,das,:q,Heil,dort,|,:q,fin,-,:h,den
+:h,das,|,:q,al,-,ler,Zei,-,ten,|,:w,Lauf
+:q, ,von,|,:8,An,-,:q,fang,:h,an,:q,ver,-,|,kün,-,det
+:q,seit,|,:8,eu,-,:q,re,:h,Schuld,:q,ge,-,|,:w,schah.
+:h,Nun,|,hat,sich,:q,euch,:8,ver,-,|,:q,bün,-,det
+:q,den,|,:h,Gott,selbst,:8,aus,-,er,-,|,:w,sah.
