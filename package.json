@@ -1,0 +1,25 @@
+{
+  "name": "staves",
+  "version": "0.0.0",
+  "description": "create pdf from vextab-based notation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dominikschreiber/staves"
+  },
+  "author": "Dominik Schreiber <dominik@dominikschreiber.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dominikschreiber/staves/issues"
+  },
+  "homepage": "https://github.com/dominikschreiber/staves",
+  "dependencies": {
+    "vextab": "^2.0.10"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  }
+}
