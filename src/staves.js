@@ -1,7 +1,9 @@
 process.env.PWD = require('phantomjs').path;
 
 function parseStavesContent(raw) {
-  var split = raw.split('\n\n')
+  var split = raw
+    .replace(/\n#[^\n]*\n/g, '\n') // remove # comments
+    .split('\n\n');
   
   return {
     headline: split[0],
@@ -51,8 +53,7 @@ module.exports = function(program) {
     htmlpdf.create(createHtmlForVextab(vextab, [raphaelJs, vextabDivJs]), {
       width: width + 'px',
       height: height + 'px',
-      filename: outfile,
-      directory: __dirname
+      filename: outfile
     }, function(err, buffer) {});
   });
 };
