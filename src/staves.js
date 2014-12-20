@@ -21,9 +21,9 @@ function createVextab(parsed) {
     }).join('\n\n');
 }
 
-function createHtmlForVextab(vextab) {
+function createHtmlForVextab(vextab, vextabDivJs) {
   return '<html>' + 
-    '<head><script>' + fs.readFileSync(__dirname + '/../node_modules/vextab/releases/vextab-div.js') + '</script></head>' + 
+    '<head><script>' + vextabDivJs + '</script></head>' + 
     '<body><div class="vex-tabdiv" width=680 scale=1.0 editor=false>' + vextab + '</div></body>' + 
     '</html>';
 }
@@ -32,11 +32,12 @@ var fs = require('fs')
   , _ = require('underscore')
   , _s = require('underscore.string')
   , phantom = require('node-phantom')
-  , program = require('commander')
+
+  , vextabDivJs = fs.readFileSync(__dirname + '/../node_modules/vextab/releases/vextab-div.js')
 
   , server = require('http').createServer(function(req, res) {
       res.writeHead(200, {'Content-Type': 'text/html'});
-      res.end('<html><head></head><body></body></html>');
+      res.end(createHtmlForVextab(decodeURIComponent(req.url.substring(req.url.lastIndexOf('?html='))), vextabDivJs));
     }).listen();
 
 module.exports = function(program) {
@@ -53,13 +54,18 @@ module.exports = function(program) {
         console.log(err);
       } else {
         ph.createPage(function(err, page) {
-          page.open('http://localhost:' + server.address().port, function(err, status) {
-            page.content = createHtmlForVextab(vextab);
+          page.open('http://localhost:' + server.address().port + '/?html=' + encodeURIComponent(vextab), function(err, status) {
+            console.log(page);
             page.render(outfile);
             ph.exit();
           });
         });
       }
-    }, {phantomPath: require('phantomjs').path });
+    }, {
+      phantomPath: require('phantomjs').path,
+      parameters: {
+        'web-security': 'false'
+      }
+    });
   });
 };
