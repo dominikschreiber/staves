@@ -23,10 +23,10 @@ function createVextab(parsed) {
     }).join('\n\n');
 }
 
-function createHtmlForVextab(vextab, vextabDivJs) {
+function createHtmlForVextab(vextab, scripts) {
   return '<html>' + 
-    '<head><script>' + vextabDivJs + '</script></head>' + 
-    '<body><div class="vex-tabdiv" width=680 scale=1.0 editor=false>' + vextab + '</div></body>' + 
+    '<head>' + _.map(scripts, function(script) { return '<script>' + script + '</script>'; }).join('') + '</head>' + 
+    '<body style="-webkit-filter: invert(100%)"><div class="vex-tabdiv" width=680 scale=1.0 editor=false>' + vextab + '</div></body>' + 
     '</html>';
 }
 
@@ -35,21 +35,22 @@ var fs = require('fs')
   , _s = require('underscore.string')
   , htmlpdf = require('html-pdf')
 
-  , vextabDivJs = fs.readFileSync(__dirname + '/../node_modules/vextab/releases/vextab-div.js');
+  , vextabDivJs = fs.readFileSync(__dirname + '/../node_modules/vextab/releases/vextab-div.js')
+  , raphaelJs = fs.readFileSync(__dirname + '/../node_modules/raphael/raphael-min.js');
 
 module.exports = function(program) {
   var infile = program.I
     , outfile = program.O
     , transpose = program.T
-    , perPage = program.Pp;
+    , width = program.W
+    , height = program.H;
   
   fs.readFile(infile, function(err, buff) {
     var vextab = createVextab(parseStavesContent(buff.toString()));
     
-    htmlpdf.create(createHtmlForVextab(vextab, vextabDivJs), {
-      width: '1024px',
-      height: '800px',
-      type: 'pdf',
+    htmlpdf.create(createHtmlForVextab(vextab, [raphaelJs, vextabDivJs]), {
+      width: width + 'px',
+      height: height + 'px',
       filename: outfile,
       directory: __dirname
     }, function(err, buffer) {});
