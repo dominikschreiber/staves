@@ -19,7 +19,7 @@
   "homepage": "https://github.com/dominikschreiber/staves",
   "dependencies": {
     "commander": "^2.5.1",
-    "node-phantom": "^0.2.5",
+    "html-pdf": "^0.3.0",
     "phantomjs": "^1.9.13",
     "socket.io": "0.9.x",
     "underscore": "^1.7.0",
