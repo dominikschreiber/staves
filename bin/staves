@@ -2,7 +2,12 @@
 
 var program = require('commander')
   , package = require('../package.json')
-  , staves = require('../src/staves');
+  , staves = require('../src/staves')
+  , _ = require('underscore');
+
+_.str = require('underscore.string');
+_.mixin(_.str.exports());
+_.str.include('Underscore.string', 'string');
 
 program
   .version(package.version)
@@ -13,4 +18,8 @@ program
 
 program.parse(process.argv);
 
-return staves(program);
+if (program.args.length === 1 && _(program.args[0]).endsWith('.staves')) {
+  staves(_.extend({}, program, {I: program.args[0]}));
+} else {
+  program.help();
+}
