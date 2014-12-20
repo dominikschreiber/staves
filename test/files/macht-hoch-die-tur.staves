@@ -1,0 +1,19 @@
+tabstave key=F time=6/4 notation=true tablature=false
+
+:q A/4 | :h C/5 :q B/4 :h A/4 :q G/4 | FhG-A/4 :h G/4 |
+:q C/5 | :h B/4 :q B/4 :h A/4 :q A/4 | GhF-G/4 :h F/4 |
+:q A/4 | :h G/4 :q G-AhBn/4 C/5 | ChD/5 Bn/4 :h C/5 |
+:q G/4 | :h A/4 :q G-AhBn/4 C/5 | ChD/5 Bn/4 :h C/5 |
+:q C/5 | :h D/5 :q C/5 :h D/5 :q C/5 | DhC/5 B/4 :h A/4 |
+:q C/5 | :h D/5 :q C/5 :h D/5 :q C/5 | DhC/5 B/4 :h A/4 |
+:q C/5 | :h F/4 :q F/4 :h B/4 :q A/4 | :hd G/4 :h hG/4 |
+:q C/5 | :h B/4 :q A-GhF-G/4 | :hd F/4 :h hF/4 =||
+
+:q,Macht,|,:h,hoch,:q,die,:h,Tür,:q,die,|,:h,Tor,:8,macht, ,:h,weit;
+:q,Es,|,:h,kommt,:q,der,:h,Herr,:q,der,|,Herr,-,:8,lich,-,:h,keit
+:q,ein,|,Kö,-,nig,al,-,er,|,Kö,-,:8,nig,-,:h,reich
+:q,ein,|,Hei,-,land,al,-,ler,|,:h,Welt,:8,zu,-,:h,gleich
+:q,der,|,:h,Heil,:q,und,Le,-,ben,|,:h,mit,:q,sich,:h,bringt;
+:8,der,-,:q,|,hal,-,ben,:h,jauchzt,:q,mit,|,Freu,-,den,:h,singt:
+:8,Ge,-,:q,|,lo,-,bet,:h,sei,:q,mein,|,:hq,Gott
+:q,Mein,|,Schöp,-,fer,:h,reich,:q,an,|,:hq,Rat!
