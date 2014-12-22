@@ -8,7 +8,6 @@ var fs = require('fs')
 module.exports = function(program) {
     var infile = program.I
       , outfile = program.O
-      , transpose = program.T
       , width = program.W
       , height = program.H
       , shouldUseSvg = program.S;
