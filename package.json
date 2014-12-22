@@ -1,6 +1,6 @@
 {
   "name": "staves",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "create pdf from vextab-based notation",
   "main": "bin/staves",
   "scripts": {
