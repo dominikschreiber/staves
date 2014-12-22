@@ -15,16 +15,17 @@ Getting started
 ```
 $ (sudo) npm install -g staves
 $ staves --help
+
   Usage: staves [options] <file.staves>
 
   Options:
 
-    -h, --help                             output usage information
-    -V, --version                          output the version number
-    -w <n > 0>, --width <n > 0>            the width of the pdf file to create (in px), defaults to 1024
-    -h <n > 0>, --height <n > 0>           the height of the pdf file to create (in px), defaults to 800
-    -o <file.pdf>, --outfile <file.pdf>    the target pdf file, defaults to a.pdf
-    -t <-11..+11>, --transpose <-11..+11>  transpose the content of <file.staves> by -11 to +11 semitones, defaults to 0
+    -h, --help                           output usage information
+    -V, --version                        output the version number
+    -w <n > 0>, --width <n > 0>          the width of the pdf file to create (in px), defaults to 1024
+    -h <n > 0>, --height <n > 0>         the height of the pdf file to create (in px), defaults to 800
+    -o <file.pdf>, --outfile <file.pdf>  the target pdf file, defaults to a.pdf
+    -s, --svg                            use RaphaelJS to create svg instead of html5 canvas
 ```
 
 License
