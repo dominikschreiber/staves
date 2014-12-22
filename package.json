@@ -1,11 +1,14 @@
 {
   "name": "staves",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "create pdf from vextab-based notation",
-  "main": "bin/staves",
+  "main": "./bin/staves",
+  "bin": {
+    "staves": "./bin/staves"  
+  },
   "scripts": {
-    "start": "bin/staves",
-    "test": "node_modules/.bin/mocha"
+    "start": "./bin/staves",
+    "test": "./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
