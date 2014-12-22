@@ -30,6 +30,8 @@ function createHtmlForVextab(vextab, scripts) {
             .value()
             .join('') +
         '</head>' +
-        '<body><div class="vex-tabdiv" width=680 scale=1.0 editor=false>' + vextab + '</div></body>' + 
+        '<body>' +
+            '<div class="vex-tabdiv" width=680 scale=1.0 editor=false>' + vextab + '</div>' +
+        '</body>' + 
         '</html>';
 }
