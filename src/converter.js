@@ -24,21 +24,22 @@ exports.toVextabs = function(stavesPerPage) {
             // => [<text>, ...]
             .map(function(verse) {
                 return _.chain(parsed.notes)
-                    // => [<note>, ...]
+                    // => [<notes>, ...]
                     .zip(verse)
-                    // => [[<note>, <text>], ...]
+                    // => [[<notes>, <text>], ...]
                     .map(createTabstave(parsed.headline))
-                    // => [<headline>\n<note-line>\n<text-line>, ...]
+                    // => [<headline>\n<notes-line>\n<text-line>, ...]
                     .reduce(createSubArrays(stavesPerPage), [[]])
-                    // => [[<headline>\n<note-line>\n<text-line> x stavesPerPage], ...]
+                    // => [[<headline>\n<notes-line>\n<text-line> x stavesPerPage], ...]
                     .map(function(vextabs) { return vextabs.join('\n\n') })
-                    // => [<headline>\n<note-line>\n<text-line>\n\n x stavesPerPage, ...]
+                    // => [<headline>\n<notes-line>\n<text-line>\n\n x stavesPerPage, ...]
                     .value()
             })
+            // => [[<headline>\n<notes-line>\n<text-line>\n\n x stavesPerPage, ...], ...]
             .flatten()
-            // => [<headline>\n<note-line>\n<text-line>\n\n x stavesPerPage, ...]
+            // => [<headline>\n<notes-line>\n<text-line>\n\n x stavesPerPage, ...]
             .map(createPage)
-            // => [<options>\n\n<headline>\n<note-line>\n<text-line>\n\n..., ...]
+            // => [<options>\n\n<headline>\n<notes-line>\n<text-line>\n\n..., ...]
             .value();
     });
 };
