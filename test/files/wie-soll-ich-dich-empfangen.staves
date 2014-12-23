@@ -1,0 +1,50 @@
+tabstave key=D notation=true tablature=false
+
+:q D/4 | F-G-A-A/4 | :h G/4 :q F/4
+:q G/4 | F-D-E-E/4 | :h D/4 :q ##
+:q D/4 | F-G-A-A/4 | :h G/4 :q F/4
+:q G/4 | F-D-E-E/4 | :h D/4 :q ##
+:q A/4 | :h D-C/5 :q B-A/4 | AhGv/4 :h A/4 :q ##
+:q F/4 | A-A-G-F/4 | :h E/4 :q ##
+:q F/4 | D-D-E-F/4 | :h G/4 :q F/4
+:q A/4 | G-F-E-E/4 | :hd D/4
+
+# Strophe 1
+:q Wie | soll ich dich :8 emp - | :q fan - gen
+:q und | wie :8 be - :q gegn ich | :hd dir
+:q o | :8 al - :q ler Welt :8 Ver - | :q lan - gen
+:q o | :8 mei - :q ner :8 See - :q le | :h Zier?
+:q O | Je - :h su :8 Je - :q su | set - :h ze
+:q mir | selbst die :8 Fak - :q kel | :hd bei
+:8 da - | :q mit was dich :8 er - | :q göt - ze
+:q mir | kund und :h wissend | :hq sei.
+
+# Strophe 3
+:q Was | hast du :8 un - ter - | :q las - sen
+:q zu | :8 mei - :q nem Trost und | :hd Freud
+:q als | Leib und :8 See - :q le | sas - sen
+:q in | :8 ih - :q rem :8 grös - :q sten | :hd Leid?
+:q Als | :h mir das :q Reich :8 ge - | :q nom - men
+:q da | Fried und :8 Freu - :q de | :hd lacht
+:q da | bist du mein Heil | kom - men
+:q und | hast mich froh :8 ge - | :hd macht.
+
+# Strophe 5
+:q Nichts | nichts hat dich :8 ge - | :q trie - ben
+:q zu | mir vom :8 Him - mels - | :hd zelt
+:q als | das :8 ge - lieb - :q te | :q Lie - ben
+:8 da - | :q mit du :8 al - :q le | :hd Welt
+:q in | ih - :h ren :8 tau - :q send | Pla - gen
+:q und | :8 gros - :q sem :8 Jam - mer - | :hd last
+:q die | kein Mund kann :8 aus - | :q sa - gen
+:q so | fest :8 um - klam - :q mert | :hd hast.
+
+# Strophe 9
+:q Was | fragt ihr nach dem | Schrei - en
+:q der | Feind und :8 ih - :q rer | :hd Tück?
+:q Der | Herr wird sie :8 zer - | :q streu - en
+:q in | :8 ei - :q nem :8 Au - gen - | :hd blick.
+:q Er | :h kommt er :q kommt ein | Kö - nig
+:q dem | :8 wahr - :q lich :8 al - :q le | :hd Feind
+:q auf | :8 Er - :q den viel zu | we - nig
+:q zum | :8 Wi - der - stan - :q de | :hd sind.
