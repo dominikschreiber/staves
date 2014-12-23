@@ -1,6 +1,7 @@
 var fs = require('fs')
   , es = require('event-stream')
   , async = require('async')
+  , debug = require('debug')('pdf')
   , _ = require('underscore')
   , _s = require('underscore.string')
   , htmlpdf = require('html-pdf');
@@ -27,6 +28,7 @@ exports.toPdf = function(outfile, shouldUseSvg, width, height) {
         }, function(err, pages) {
         });
         
+        debug(filenames);
         return filenames;
     });
 };
