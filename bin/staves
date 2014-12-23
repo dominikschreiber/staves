@@ -14,7 +14,7 @@ program
   .usage('[options] <file.staves>')
   .option('-w <n > 0>, --width <n > 0>', 'the width of the pdf file to create (in px), defaults to 1024', 1024)
   .option('-h <n > 0>, --height <n > 0>', 'the height of the pdf file to create (in px), defaults to 800', 800)
-  .option('-o <file.pdf>, --outfile <file.pdf>', 'the target pdf file, defaults to a.pdf', 'a.pdf')
+  .option('-o <file.pdf>, --outfile <file.pdf>', 'the target pdf file, defaults to <file.pdf> (e.g. "foo.staves" -> "foo.pdf")', undefined)
   .option('-s, --svg', 'use RaphaelJS to create svg instead of html5 canvas')
 
 program.parse(process.argv);
