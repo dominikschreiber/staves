@@ -1,15 +1,15 @@
 tabstave time=2/2 key=G tablature=false notation=true
 
-:q G/4 | :h G/4 :q D-G/4 | :h A-D/4
-:q B-A-B/4 C/5 | :h B/4 :q A/4
-:q G/4 | :h G/4 :q F-E/4 | FhG-A/4
-:q B/4 | :h F/4 :qd E/4 :8 hD/4 | :h D/4
-:h D/5 :q C/5 B/4 | :h C/5 B/4
-:q A-B-G-A/4 | :qd F/4 :8 hE/4 :q D/4
-:q G/4 | G-F-G-A/4 | :h G/4 :q D/4
-:q B/4 | B-A-B/4 C/5 | :h B/4 :q A/4
-:q B/4 | C/5 B-A-G/4 | :h F/4 :q G/4
-:q A/4 | :h BhA/4 | :hd G/4
+:q G | :h G :q D-G | :h A-D
+:q B-A-B C/5 | :h B :q A
+:q G | :h G :q F-E | FhG-A
+:q B | :h F :qd E :8 hD | :h D
+:h D/5 :q C/5 B | :h C/5 B
+:q A-B-G-A | :qd F :8 hE :q D
+:q G | G-F-G-A | :h G :q D
+:q B | B-A-B C/5 | :h B :q A
+:q B | C/5 B-A-G | :h F :q G
+:q A | :h BhA | :hd G
 
 :8 Her - | :h bei :q o ihr | :q Gläu - :h gen
 :8 fröh - :q lich :8 tri - um - | :q phie - rend

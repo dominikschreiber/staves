@@ -1,0 +1,40 @@
+tabstave key=D time=4/4 notation=true tablature=false
+
+:h A-B | :qd A :8 G :q FhG
+:h A-B | :qd A :8 G :q FhG
+:h A-A | B/4 :q C-D/5
+:h C/5 B | :w A =||
+:qd E :8 hF :q E-F | :qd G :8 hA :h G
+:qd F :8 hG :q F-G | :qd A :8 hB :h A
+:q DhC/5 BhA | D/5 B-A
+:q G | :h F-E | :w D =||
+
+# Strophe 1
+:h O du | :q fröh :8 - :16 li - :h che
+:h O du | :q se :8 - :16 li - :h ge
+:q gna - den - | brin - :8 gen - :q de
+:q Weih - nachts - | :w zeit!
+:h Welt :q ging :8 ver - | :q lo - :h ren
+:h Christ :q ist :8 ge - | :q bo - :h ren:
+:q Freu - :h e | :8 freu - :q e dich
+:q o | Chri - sten - | :w heit!
+
+# Strophe 2
+:h O du | :q fröh :8 - :16 li - :h che
+:h O du | :q se :8 - :16 li - :h ge
+:q gna - den - | brin - :8 gen - :q de
+:q Weih - nachts - | :w zeit!
+:h Christ :q ist :8 er - | :q schie - :h nen
+:h uns :q zu :8 ver - | :q süh - :h nen:
+:q Freu - :h e | :8 freu - :q e dich
+:q o | Chri - sten - | :w heit!
+
+# Strophe 3
+:h O du | :q fröh :8 - :16 li - :h che
+:h O du | :q se :8 - :16 li - :h ge
+:q gna - den - | brin - :8 gen - :q de
+:q Weih - nachts - | :w zeit!
+:q Himm - :8 li - :q sche | :q Hee - :h re
+:q Jauch - :q zen dir | :q Eh - :h re:
+:q Freu - :h e | :8 freu - :q e dich
+:q o | Chri - sten - | :w heit!

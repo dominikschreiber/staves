@@ -1,14 +1,14 @@
 tabstave key=Eb time=6/4 notation=true tablature=false
 
 # Noten
-:h G/4 | C-C/5 :q B-G/4 | :h A-G/4
-:h F/4 | :q G-E-ChD/4 :h E/4 | :w F/4
-:h G/4 | C-C/5 :q B-G/4 | :h A-G/4
-:h F/4 | :q G-E-ChD/4 :h E/4 | :w F/4
-:q ## F/4 | F-G/4 :h A-G/4 | F/4 :q F/4
-:q C/5 | D-E/5 :h D/5 :q C/5hB/4 | :w C/5
-:h G/4 | C/5 B/4 :q A-G/4 | FhE-F/4
-:q G/4 | :h E-C/4 :q F-F/4 | :w G/4
+:h G | C-C/5 :q B-G | :h A-G
+:h F | :q G-E-ChD :h E | :w F
+:h G | C-C/5 :q B-G | :h A-G
+:h F | :q G-E-ChD :h E | :w F
+:q ## F | F-G :h A-G | F :q F
+:q C/5 | D-E/5 :h D/5 :q C/5hB | :w C/5
+:h G | C/5 B :q A-G | FhE-F
+:q G | :h E-C :q F-F | :w G
 
 # Strophe 1
 :q 1. Die | :h Nacht ist :8 vor - ge - | :q drun - :h gen
