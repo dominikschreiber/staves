@@ -1,5 +1,6 @@
 var es = require('event-stream')
-  , _ = require('underscore');
+  , _ = require('underscore')
+  , debug = require('debug')('vextab');
 
 /**
  * <p>converts a parsed .staves file like</p>
@@ -20,7 +21,7 @@ var es = require('event-stream')
  */
 exports.toVextabs = function(stavesPerPage) {
     return es.mapSync(function(parsed) {
-        return _.chain(parsed.texts)
+        var vextabs = _.chain(parsed.texts)
             // => [<text>, ...]
             .map(function(verse) {
                 return _.chain(parsed.notes)
@@ -41,6 +42,9 @@ exports.toVextabs = function(stavesPerPage) {
             .map(createPage)
             // => [<options>\n\n<headline>\n<notes-line>\n<text-line>\n\n..., ...]
             .value();
+        
+        debug(vextabs);
+        return vextabs;
     });
 };
 
