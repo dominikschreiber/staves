@@ -6,12 +6,14 @@ exports.parse = function() {
     return es.mapSync(function (raw) {
         var split = raw
             .toString()
-            .replace(/\n#[^\n]*\n/g, '\n') // remove # comments
-            .split('\n\n')
+            .replace(/(^|\n)#[^\n]*(\n|$)/g, '$1') // remove # comments
+            .split(/\n\n+/g)
         
           , parsed = {
                 headline: split[0],
-                notes: split[1].split('\n'),
+                notes: split[1]
+                    .replace(/([A-G])(b|n|v)?(\s|$)/g, '$1$2/4$3')
+                    .split('\n'),
                 texts: _.map(split.slice(2), function(verse) {
                     return verse
                         .replace(/ /g, ',')
