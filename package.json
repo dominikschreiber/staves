@@ -28,7 +28,6 @@
     "html-pdf": "^0.3.0",
     "phantomjs": "^1.9.13",
     "raphael": "^2.1.0",
-    "socket.io": "0.9.x",
     "underscore": "^1.7.0",
     "underscore.string": "^2.4.0",
     "vextab": "^2.0.10"
