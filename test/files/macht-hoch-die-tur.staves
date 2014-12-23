@@ -11,11 +11,11 @@ tabstave key=F time=6/4 notation=true tablature=false
 :q C/5 | :h B/4 :q A-GhF-G/4 | :hd F/4 :h hF/4 =||
 
 # Strophe 1
-:q,Macht,|,:h,hoch,:q,die,:h,Tür,:q,die,|,:h,Tor,:8,macht, ,:h,weit;
-:q,Es,|,:h,kommt,:q,der,:h,Herr,:q,der,|,Herr,-,:8,lich,-,:h,keit
-:q,ein,|,Kö,-,nig,al,-,er,|,Kö,-,:8,nig,-,:h,reich
-:q,ein,|,Hei,-,land,al,-,ler,|,:h,Welt,:8,zu,-,:h,gleich
-:q,der,|,:h,Heil,:q,und,Le,-,ben,|,:h,mit,:q,sich,:h,bringt;
-:8,der,-,:q,|,hal,-,ben,:h,jauchzt,:q,mit,|,Freu,-,den,:h,singt:
-:8,Ge,-,:q,|,lo,-,bet,:h,sei,:q,mein,|,:hq,Gott
-:q,Mein,|,Schöp,-,fer,:h,reich,:q,an,|,:hq,Rat!
+:q Macht | :h hoch :q die :h Tür :q die | :h Tor :8 macht   :h weit;
+:q Es | :h kommt :q der :h Herr :q der | Herr - :8 lich - :h keit
+:q ein | Kö - nig al - er | Kö - :8 nig - :h reich
+:q ein | Hei - land al - ler | :h Welt :8 zu - :h gleich
+:q der | :h Heil :q und Le - ben | :h mit :q sich :h bringt;
+:8 der - :q | hal - ben :h jauchzt :q mit | Freu - den :h singt:
+:8 Ge - :q | lo - bet :h sei :q mein | :hq Gott
+:q Mein | Schöp - fer :h reich :q an | :hq Rat!
