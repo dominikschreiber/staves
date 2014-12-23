@@ -56,3 +56,5 @@ SOFTWARE.
 ```
 
 (see [LICENSE](LICENSE))
+
+**Note:** However, the underlying [0xfe/vextab](https://github.com/0xfe/vextab) library prohibits commercial use (you need to contact the owner, [Mohit Muthanna Cheppudira](https://github.com/0xfe), in that case). Keep this in mind.
