@@ -1,5 +1,6 @@
 var fs = require('fs')
   , es = require('event-stream')
+  , async = require('async')
   , _ = require('underscore')
   , _s = require('underscore.string')
   , htmlpdf = require('html-pdf');
@@ -14,18 +15,17 @@ exports.toPdf = function(outfile, shouldUseSvg, width, height) {
     
     return es.mapSync(function(vextabs) {
         var filenames = _.map(_.range(vextabs.length), function(index) {
-           return outfile.replace('.pdf', '-' + _s.lpad(index + 1, 2, '0') + '.pdf');
+            return outfile.replace('.pdf', '-' + _s.lpad(index + 1, 2, '0') + '.pdf');
         });
         
-        _.chain(vextabs)
-            .zip(filenames)
-            .each(function(vextabFilename) {
-                htmlpdf.create(createHtmlForVextab(vextabFilename[0], scripts), {
-                    width: width + 'px',
-                    height: height + 'px',
-                    filename: vextabFilename[1]
-                }, function(err, buffer) {});
-            });
+        async.map(_.zip(vextabs, filenames), function(vextabFilename, cb) {
+            htmlpdf.create(createHtmlForVextab(vextabFilename[0], scripts), {
+                width: width + 'px',
+                height: height + 'px',
+                filename: vextabFilename[1]
+            }, cb);
+        }, function(err, pages) {
+        });
         
         return filenames;
     });
