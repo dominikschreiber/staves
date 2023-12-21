@@ -1,6 +1,8 @@
 staves
 ======
 
+*Note from Dec 2023: I reanimated this project after 9 years out of curiosity (and because I again saw usecase for it in my environment). Surprisingly it took ~2h to bring it back to life, and I was able to remove almost all dependencies.*
+
 Create pdfs from `.staves` notations with just a command line execution:
 
 ```bash
