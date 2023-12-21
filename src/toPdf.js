@@ -20,7 +20,7 @@ export async function toPdf(vextabs, outfile='out.pdf', shouldUseSvg=false, widt
 	const browser = await puppeteer.launch({headless: 'new'});
 	let i = 1;
 	for (const vextab of vextabs) {
-		const filename = outfile.replace('.pdf', `${String(i++).padStart(2, '0')}.pdf`);
+		const filename = outfile.replace('.pdf', `-${String(i++).padStart(2, '0')}.pdf`);
 		const page = await browser.newPage();
 		await page.setContent(createHtmlForVextab(vextab, width, scripts));
 		await writeFile(filename, await page.pdf({height, width}));
