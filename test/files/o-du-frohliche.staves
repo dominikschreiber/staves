@@ -1,5 +1,6 @@
 tabstave key=D time=4/4 notation=true tablature=false
 
+# @typedef Strophe
 :h A-B | :qd A :8 G :q FhG
 :h A-B | :qd A :8 G :q FhG
 :h A-A | B/4 :q C-D/5
@@ -9,7 +10,7 @@ tabstave key=D time=4/4 notation=true tablature=false
 :q DhC/5 BhA | D/5 B-A
 :q G | :h F-E | :w D =||
 
-# Strophe 1
+# @type Strophe
 :h O du | :q fröh :8 - :16 li - :h che
 :h O du | :q se :8 - :16 li - :h ge
 :q gna - den - | brin - :8 gen - :q de
@@ -19,7 +20,7 @@ tabstave key=D time=4/4 notation=true tablature=false
 :q Freu - :h e | :8 freu - :q e dich
 :q o | Chri - sten - | :w heit!
 
-# Strophe 2
+# @type Strophe
 :h O du | :q fröh :8 - :16 li - :h che
 :h O du | :q se :8 - :16 li - :h ge
 :q gna - den - | brin - :8 gen - :q de
@@ -29,7 +30,7 @@ tabstave key=D time=4/4 notation=true tablature=false
 :q Freu - :h e | :8 freu - :q e dich
 :q o | Chri - sten - | :w heit!
 
-# Strophe 3
+# @type Strophe
 :h O du | :q fröh :8 - :16 li - :h che
 :h O du | :q se :8 - :16 li - :h ge
 :q gna - den - | brin - :8 gen - :q de

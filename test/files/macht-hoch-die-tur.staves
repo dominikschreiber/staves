@@ -1,6 +1,6 @@
 tabstave key=F time=6/4 notation=true tablature=false
 
-# Noten
+# @typedef Strophe
 :q A | :h C/5 :q B :h A :q G | FhG-A :h G
 :q C/5 | :h B :q B :h A :q A | GhF-G :h F
 :q A | :h G :q G-AhBn C/5 | ChD/5 Bn :h C/5
@@ -10,7 +10,7 @@ tabstave key=F time=6/4 notation=true tablature=false
 :q C/5 | :h F :q F :h B :q A | :hd G :h hG
 :q C/5 | :h B :q A-GhF-G | :hd F :h hF =||
 
-# Strophe 1
+# @type Strophe
 :q Macht | :h hoch :q die :h Tür :q die | :h Tor :q macht :h weit;
 :q Es | :h kommt :q der :h Herr :q der | Herr - :8 lich - :h keit
 :q ein | Kö - nig al - er | Kö - :8 nig - :h reich

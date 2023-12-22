@@ -1,5 +1,6 @@
 tabstave key=D time=4/4 notation=true tablature=false
 
+# @typedef Strophe
 :q F | B C-D/5 B | :qd A :8 G :q F
 :q A | :qd D :8 C :q D-E | :h F :q F
 :q F | B C-D/5 B | :qd A :8 G :q F
@@ -8,7 +9,7 @@ tabstave key=D time=4/4 notation=true tablature=false
 :q A | D/5 A-B-A | :qd G :8 A :q F
 :q F | Gv Av :8 B D-C/5 B | :h Av :q B =||
 
-# Strophe 1
+# @type Strophe
 :q Ich | steh an :8 dei - :q ner | Krip :8 - pen :q hier
 :q o | Je :8 - su :q du mein | Le - ben
 :q Ich | :8 kom - :q me bring und | schen :8 - ke :q dir
@@ -17,7 +18,7 @@ tabstave key=D time=4/4 notation=true tablature=false
 :q Herz | Seel und Mut nimm | al :8 - les :q hin
 :q und | laß dirs wohl :8 ge - | :q fal - len.
 
-# Strophe 2
+# @type Strophe
 :q Da | ich noch nicht :8 ge - | :q bo :8 - ren :q war
 :q da | :qd bist :8 du :q mir :8 ge - | :q bo - ren
 :q und | hast mich dir zu | ei :8 - gen :q gar
@@ -26,7 +27,7 @@ tabstave key=D time=4/4 notation=true tablature=false
 :q da | hast du schon bei | :qd dir :16 be - :q dacht
 :q wie | du mein :8 woll - :q test | wer - den.
 
-# Strophe 3
+# @type Strophe
 :q Ich | lag in :8 tief - :q ster | To :8 - :16 des - :q nacht
 :q du | wa :8 - rest mei - :q ne | Son - ne
 :q die | :8 Son - :q ne die mir | zu :8 - :16 ge - :q bracht
@@ -35,7 +36,7 @@ tabstave key=D time=4/4 notation=true tablature=false
 :q des | :8d Glau :16 - :q bens in mir | zu :8 - :16 ge - :q richt
 :q wie | schön sind :8 dei - :q ne | Strah - len!
 
-# Strophe 4
+# @type Strophe
 :q Ich | :8 se - :q he dich mit | Freu :8 - den :q an
 :q und | :qd kann :8 mich :q nicht satt | se - hen
 :q und | weil ich nun nichts | wei :8 - ter :q kann
@@ -44,7 +45,7 @@ tabstave key=D time=4/4 notation=true tablature=false
 :q und | :8 mei - :q ne Seel ein | wei :8 - tes :q Meer
 :q daß | ich dich :8d möch :16 - :q te | fas - sen!
 
-# Strophe 5
+# @type Strophe
 :q Eins | :8 a - :q ber hoff ich | :qd wirst :8 du :q mir
 :q mein | Hei :8 - land :q nicht :8 ver - | :q sa - gen:
 :q daß | ich dich :8 mö - :q ge | :qd für :8 und :q für

@@ -1,5 +1,6 @@
 tabstave time=2/2 key=G tablature=false notation=true
 
+# @typedef Strophe
 :q G | :h G :q D-G | :h A-D
 :q B-A-B C/5 | :h B :q A
 :q G | :h G :q F-E | FhG-A
@@ -11,6 +12,7 @@ tabstave time=2/2 key=G tablature=false notation=true
 :q B | C/5 B-A-G | :h F :q G
 :q A | :h BhA | :hd G
 
+# @type Strophe
 :8 Her - | :h bei :q o ihr | :q Gläu - :h gen
 :8 fröh - :q lich :8 tri - um - | :q phie - rend
 :q o | kom - met o | kom - met
@@ -22,6 +24,7 @@ tabstave time=2/2 key=G tablature=false notation=true
 :q o | :8 las - :q set uns :8 an - | :q be - ten
 :q den | :h Kö - | :hd nig!
 
+# @type Strophe
 :q Du | Kö - nig der | Eh - :h ren
 :8 Herr - :q scher der :8 Heer - | :q scha - ren
 :8 ver - | :h schmähst :q nicht zu | :8 ruh - :q en in
@@ -33,6 +36,7 @@ tabstave time=2/2 key=G tablature=false notation=true
 :q o | :8 las - :q set uns :8 an - | :q be - ten
 :q den | :h Kö - | :hd nig!
 
+# @type Strophe
 :q Kommt | sin - get dem | Her - :h ren
 :q singt ihm :8 En - gels - | :q chö - re!
 :8 Froh - | :q lok - ket :8 froh - | :q lok - ket
@@ -44,6 +48,7 @@ tabstave time=2/2 key=G tablature=false notation=true
 :q o | :8 las - :q set uns :8 an - | :q be - ten
 :q den | :h Kö - | :hd nig!
 
+# @type Strophe
 :q Ja | :h dir :q der du | heu - :h te
 :q Mensch für uns :8 ge - | :q bor - en
 :q Herr | Je - su sei | Eh - re

@@ -21,11 +21,11 @@ import {zip} from './util.js';
  * @return {string[]}
  */
 export function toVextabs(parsed, stavesPerPage) {
-	return parsed.texts
+	return parsed.types
 		// => [<text>, ...]
-		.map(verse =>
+		.map(({text, type}) =>
 			// => [<notes>, ...]
-			zip(parsed.notes, verse)
+			zip(parsed.typedefs[type], text)
 			// => [[<notes>, <text>], ...]
 			.map(createTabstave(parsed.headline))
 			// => [<headline>\n<notes-line>\n<text-line>, ...]
@@ -69,11 +69,11 @@ function createSubArrays(length) {
  * @return {function([string, string]): string}
  */
 function createTabstave(headline) {
-	return function(noteVerse) {
+	return function([notes, text]) {
 		return [
 			headline,
-			convertNotesLine(noteVerse[0]),
-			convertTextLine(noteVerse[1])
+			convertNotesLine(notes),
+			convertTextLine(text)
 		].join('\n');
 	};
 }

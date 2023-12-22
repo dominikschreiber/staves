@@ -17,11 +17,15 @@ export async function toPdf(vextabs, outfile='out.pdf', shouldUseSvg=false, widt
 		readFile(fileURLToPath(import.meta.resolve('vextab/releases/vextab-div.js')), 'utf-8')
 	]));
 
-	const browser = await puppeteer.launch({headless: 'new'});
+	const browser = await puppeteer.launch({headless: false});
 	let i = 1;
 	for (const vextab of vextabs) {
 		const filename = outfile.replace('.pdf', `-${String(i++).padStart(2, '0')}.pdf`);
 		const page = await browser.newPage();
+		page.on('console', async e => {
+			const args = await Promise.all(e.args().map(a => a.jsonValue()));
+			console[e.type() === 'warning' ? 'warn' : e.type()](...args);
+		});
 		await page.setContent(createHtmlForVextab(vextab, width, scripts));
 		await writeFile(filename, await page.pdf({height, width}));
 		await page.close();

@@ -1,6 +1,6 @@
 tabstave key=Eb time=6/4 notation=true tablature=false
 
-# Noten
+# @typedef Strophe
 :h G | C-C/5 :q B-G | :h A-G
 :h F | :q G-E-ChD :h E | :w F
 :h G | C-C/5 :q B-G | :h A-G
@@ -10,7 +10,7 @@ tabstave key=Eb time=6/4 notation=true tablature=false
 :h G | C/5 B :q A-G | FhE-F
 :q G | :h E-C :q F-F | :w G
 
-# Strophe 1
+# @type Strophe
 :q 1. Die | :h Nacht ist :8 vor - ge - | :q drun - :h gen
 :h der | :q Tag ist :h nicht mehr | :w fern.
 :h So | sei nun :q Lob :8 ge - | :q sun - :h gen
@@ -20,7 +20,7 @@ tabstave key=Eb time=6/4 notation=true tablature=false
 :h Der | :q Mor - gen - stern :8 be - | :q schei - net
 :q auch | dei - :h ne :q Angst und | :w Pein.
 
-# Strophe 2
+# @type Strophe
 :q 2. Dem | :q Al - :h le :8 En - :q gel | :q die - :h nen
 :h wird | :q nun ein :h Kind und | :w Knecht.
 :h Gott | :q sel - :h ber :q ist :8 er - | :q schie - :h nen
@@ -30,7 +30,7 @@ tabstave key=Eb time=6/4 notation=true tablature=false
 :h Er | soll :q er - :8 ret - | :q tet wer - den
 :q wenn | :h er dem :8 Kin - :q de | :w glaubt.
 
-# Strophe 3
+# @type Strophe
 :q 3. Die | :h Nacht ist :q schon im | :q Schwin - :h den
 :h macht | :q euch zum Stal - :h le | :w auf!
 :h Ihr | sollt das :q Heil dort | :q fin - :h den
