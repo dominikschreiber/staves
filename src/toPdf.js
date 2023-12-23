@@ -17,7 +17,7 @@ export async function toPdf(vextabs, outfile='out.pdf', shouldUseSvg=false, widt
 		readFile(fileURLToPath(import.meta.resolve('vextab/releases/vextab-div.js')), 'utf-8')
 	]));
 
-	const browser = await puppeteer.launch({headless: false});
+	const browser = await puppeteer.launch({headless: 'new'});
 	let i = 1;
 	for (const vextab of vextabs) {
 		const filename = outfile.replace('.pdf', `-${String(i++).padStart(2, '0')}.pdf`);
