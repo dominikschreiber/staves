@@ -1,0 +1,13 @@
+tabstave key=G notation=true tablature=false
+
+# @typedef Chorus
+:8 B D/5 | :q E/5 :8 E/5 D/5 :q B ## | :8 A B A G :q E ##
+:8 | E G D/5 B :q hB :8 G A | :h hA :q ## :8 B D/5
+E/5 :8 E/5 D/5 :q B ## | E/5 F/5 B :8d ## :16 G |
+:8 G A B A :q hA :8 G G | :h hG ##
+
+# @type Chorus
+:8 Komm und | lo - be den :h Herrn | :16 mei - :8 ne :16 See - :8 le :h sing
+:16 | Be - :8 te den :q Kö :8 - nig an | :hd   :8 Sing wie
+:16 Nie - :8 mals :16 zu - :h vor | :q nur für ihn :8d   :16 und
+:16 be - :8 te den :q Kö :8 - nig an
