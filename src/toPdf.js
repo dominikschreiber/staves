@@ -27,7 +27,7 @@ export async function toPdf(vextabs, outfile='out.pdf', shouldUseSvg=false, widt
 			console[e.type() === 'warning' ? 'warn' : e.type()](...args);
 		});
 		await page.setContent(createHtmlForVextab(vextab, width, scripts));
-		await writeFile(filename, await page.pdf({height, width}));
+		await writeFile(filename, await page.pdf({height, width, printBackground: true}));
 		await page.close();
 	}
 	await browser.close();
@@ -42,7 +42,10 @@ function createHtmlForVextab(vextab, width, scripts = []) {
 	return `<!doctype html>
 <html>
 	<head>
-		<style>body{height:100vh;margin:0;display:flex;align-items:center;justify-content:center}</style>
+		<style>
+			html{filter:invert(1)}
+			body{height:100vh;margin:0;display:flex;align-items:center;justify-content:center;background:white}
+		</style>
 		${scripts.filter(Boolean).map(_ => `<script>${_}</script>`).join('\n\t\t')}
 	</head>
 	<body>
